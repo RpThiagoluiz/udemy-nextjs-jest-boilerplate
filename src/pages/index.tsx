@@ -6,8 +6,6 @@ type Props = {
   title: string
 }
 
-const test = ' 123'
-
 export default function Home({ title = 'React Avancado' }: Props) {
   return (
     <div className={styles.container}>
@@ -21,7 +19,7 @@ export default function Home({ title = 'React Avancado' }: Props) {
         <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing
           <code className={styles.code}>pages/index.js</code>
         </p>
 
