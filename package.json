@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "lint-staged":{
-    "src/**/*" : [ "yarn lint "]
+    "src/**/*" : [ "yarn lint --fix "]
   },
   "dependencies": {
     "next": "11.0.0",
