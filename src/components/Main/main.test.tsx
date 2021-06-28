@@ -20,4 +20,15 @@ describe('<Main/>', () => {
     //Garante uma camada a mais de seguranca - como estamos procurando um reading precisamos dele.
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  //Just for test styled-component
+  it('should render colors correctly', () => {
+    const { container } = render(<Main />)
+
+    //Verificar todos os estilos, ou pedaco da main tbm.
+    //Pode verificar o focus, caso mudou algum stilo quando o usuario focar em input, por exemplo.
+    expect(container.firstChild).toHaveStyle({
+      'background-color': '#06092b'
+    })
+  })
 })
