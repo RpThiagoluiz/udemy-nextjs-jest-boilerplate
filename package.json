@@ -9,11 +9,12 @@
     "lint": "eslint src --max-warnings=0",
     "lintsrc": "lint src ",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "test:watch":"yarn test --watch"
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix "
+      "yarn lint --fix ","yarn test --bail"
     ]
   },
   "dependencies": {
